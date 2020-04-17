@@ -1,0 +1,12 @@
+.dockerenv
+README
+usr/local/src/build
+
+boot/initramfs-*
+dev/*
+proc/*
+root/*
+run/*
+sys/*
+tmp/*
+var/cache/pacman/pkg/*

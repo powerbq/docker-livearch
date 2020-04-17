@@ -1,0 +1,11 @@
+#!/usr/bin/ash
+
+run_hook() {
+	export PATH=/usr/bin:/usr/sbin:/bin:/sbin
+
+	source /usr/share/livearch/run.sh
+
+	mount_handler=/bin/true
+	fsck_root() { /bin/true; }
+	resolve_device() { /bin/true; }
+}

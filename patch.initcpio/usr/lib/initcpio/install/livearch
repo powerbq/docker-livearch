@@ -1,0 +1,12 @@
+#!/usr/bin/sh
+
+build() {
+	add_file /usr/share/livearch/9990-config.sh
+	add_file /usr/share/livearch/9990-func.sh
+	add_file /usr/share/livearch/9990-live.sh
+	add_file /usr/share/livearch/run.sh
+
+	add_binary btrfs
+
+	add_runscript
+}

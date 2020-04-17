@@ -1,0 +1,14 @@
+version: '3.7'
+
+services:
+  livearch:
+    build:
+      context: .
+      network: host
+    image: livearch
+    container_name: livearch
+    network_mode: host
+    privileged: true
+    volumes:
+      - ../out:/usr/local/src/build/out
+      - ../pkg:/var/cache/pacman/pkg

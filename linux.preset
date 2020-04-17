@@ -1,0 +1,10 @@
+ALL_config="/etc/mkinitcpio.conf"
+ALL_kver="/boot/vmlinuz-linux"
+
+PRESETS=('basic' 'full')
+
+basic_image="/boot/initramfs-linux-basic.img"
+basic_options="-S autodetect -A livearch"
+
+full_image="/boot/initramfs-linux-full.img"
+full_options="-S autodetect -A mdadm_udev,encrypt,lvm2,livearch"
